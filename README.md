@@ -8,21 +8,64 @@
 [![Imports with isort](https://img.shields.io/badge/%20imports-isort-%231674b1)](https://pycqa.github.io/isort/)
 [![License](https://img.shields.io/github/license/idlewith/jsoncf)](https://img.shields.io/github/license/idlewith/jsoncf)
 
-prettify json string from clipboard
+**prettify json string from clipboard**
 
 - **Github repository**: <https://github.com/idlewith/jsoncf/>
 - **Documentation** <https://idlewith.github.io/jsoncf/>
 
-## Releasing a new version
 
-- Create an API Token on [Pypi](https://pypi.org/).
-- Add the API Token to your projects secrets with the name `PYPI_TOKEN` by visiting 
-[this page](https://github.com/idlewith/jsoncf/settings/secrets/actions/new).
-- Create a [new release](https://github.com/idlewith/jsoncf/releases/new) on Github. 
-Create a new tag in the form ``*.*.*``.
+## Install
 
-For more details, see [here](https://fpgmaas.github.io/cookiecutter-poetry/releasing.html).
+```shell
+pip install jsoncf
+```
 
----
+## Usage
 
-Repository initiated with [fpgmaas/cookiecutter-poetry](https://github.com/fpgmaas/cookiecutter-poetry).
+the json string below
+
+```
+{"employees":[  {"name":"Shyam", "email":"shyamjaiswal@gmail.com"},  {"name":"Bob", "email":"bob32@gmail.com"},  {"name":"Jai", "email":"jai87@gmail.com"}  ]} 
+```
+
+you can select the whole json string, then type `Ctrl(Cmd) + C` to copy,
+
+then just type the command
+
+```shell
+jsoncf
+```
+
+OR
+
+you can use it as args
+
+````shell
+jsoncf '{"employees":[  {"name":"Shyam", "email":"shyamjaiswal@gmail.com"},  {"name":"Bob", "email":"bob32@gmail.com"},  {"name":"Jai", "email":"jai87@gmail.com"}  ]} '
+````
+
+the output below
+
+```json
+{
+ "employees": [
+  {
+   "name": "Shyam",
+   "email": "shyamjaiswal@gmail.com"
+  },
+  {
+   "name": "Bob",
+   "email": "bob32@gmail.com"
+  },
+  {
+   "name": "Jai",
+   "email": "jai87@gmail.com"
+  }
+ ]
+}
+```
+
+
+and `jsoncf` also write json data to `data.json` in current path
+
+

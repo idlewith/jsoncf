@@ -4,17 +4,18 @@ site_url: https://idlewith.github.io/jsoncf
 site_description: prettify json string from clipboard
 site_author: idlewith
 
-nav:
-  - Home: index.md
-  - Modules: modules.md
+
 plugins:
   - search
   - mkdocstrings:
       handlers:
         python:
-            setup_commands:
-                - import sys
-                - sys.path.append('../')
+          paths: [src]
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+
 copyright: Maintained by idlewith.
 theme:
   name: material
