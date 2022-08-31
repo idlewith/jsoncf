@@ -1,11 +1,10 @@
 # jsoncf
 
-[![Release](https://img.shields.io/github/v/release/idlewith/jsoncf)](https://img.shields.io/github/v/release/idlewith/jsoncf)
-[![Build status](https://img.shields.io/github/workflow/status/idlewith/jsoncf/merge-to-main)](https://img.shields.io/github/workflow/status/idlewith/jsoncf/merge-to-main)
+[![PyPI](https://img.shields.io/pypi/v/jsoncf)](https://img.shields.io/pypi/v/jsoncf)
+[![Release](https://img.shields.io/github/v/release/idlewith/jsoncf?style=flat-square)](https://img.shields.io/github/v/release/idlewith/jsoncf?style=flat-square)
+[![Python Versions](https://img.shields.io/pypi/pyversions/jsoncf?style=flat-square)](https://img.shields.io/pypi/pyversions/jsoncf?style=flat-square)
 [![Commit activity](https://img.shields.io/github/commit-activity/m/idlewith/jsoncf)](https://img.shields.io/github/commit-activity/m/idlewith/jsoncf)
 [![Docs](https://img.shields.io/badge/docs-gh--pages-blue)](https://idlewith.github.io/jsoncf/)
-[![Code style with black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Imports with isort](https://img.shields.io/badge/%20imports-isort-%231674b1)](https://pycqa.github.io/isort/)
 [![License](https://img.shields.io/github/license/idlewith/jsoncf)](https://img.shields.io/github/license/idlewith/jsoncf)
 
 **prettify json string from clipboard**
