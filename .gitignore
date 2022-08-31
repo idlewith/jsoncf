@@ -166,3 +166,4 @@ cython_debug/
 
 # local data
 data.json
+.python-version
