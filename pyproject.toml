@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "jsoncf"
-version = "0.0.1"
+version = "0.0.2"
 description = "prettify json string from clipboard"
-authors = ["idlewith <fnewellzhou@163.com>"]
+authors = ["idlewith <newellzhou@163.com>"]
 repository = "https://github.com/idlewith/jsoncf"
 documentation = "https://idlewith.github.io/jsoncf/"
 readme = "README.md"
 packages = [
-  {include = "jsoncf"}
+  {include = "src/jsoncf"}
 ]
 
 [tool.poetry.dependencies]
