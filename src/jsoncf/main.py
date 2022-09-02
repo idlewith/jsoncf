@@ -13,19 +13,19 @@ def prettify():
 
     3. dumps to local terminal
     """
-    json_file = 'data.json'
+    json_file: str = 'data.json'
 
-    args = sys.argv
+    args: list = sys.argv
     if len(args) > 1:
-        content_list = args[1:]
-        content = " ".join(content_list)
+        content_list: list = args[1:]
+        content: str = " ".join(content_list)
     else:
         content = pyperclip.paste()
 
     content_eval = eval(content)
     json.dump(content_eval, open(json_file, 'w', encoding='utf-8'), indent=True)
 
-    text = json.dumps(content_eval, indent=True)
+    text: str = json.dumps(content_eval, indent=True)
     return text
 
 
