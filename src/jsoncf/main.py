@@ -22,10 +22,14 @@ def prettify():
     else:
         content = clipboard.paste()
 
-    content_eval = eval(content)
-    json.dump(content_eval, open(json_file, 'w', encoding='utf-8'), indent=True)
+    try:
+        content_eval = eval(content)
+    except NameError:
+        content_eval = json.loads(content)
 
-    text: str = json.dumps(content_eval, indent=True)
+    json.dump(content_eval, open(json_file, 'w', encoding='utf-8'), indent=True, ensure_ascii=False)
+
+    text: str = json.dumps(content_eval, indent=True, ensure_ascii=False).encode('utf-8').decode()
     return text
 
 
