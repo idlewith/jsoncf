@@ -1,7 +1,7 @@
 import json
 import sys
 
-import pyperclip
+from . import clipboard
 
 
 def prettify():
@@ -20,7 +20,7 @@ def prettify():
         content_list: list = args[1:]
         content: str = " ".join(content_list)
     else:
-        content = pyperclip.paste()
+        content = clipboard.paste()
 
     content_eval = eval(content)
     json.dump(content_eval, open(json_file, 'w', encoding='utf-8'), indent=True)
