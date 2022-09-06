@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jsoncf"
-version = "0.0.4"
+version = "0.0.5"
 description = "prettify json data from clipboard"
 authors = ["idlewith <newellzhou@163.com>"]
 license = "MIT"
